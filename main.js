@@ -12,7 +12,7 @@ const ColorList = (arrayOfColors) => {
     // 6. INSIDE of the <ul> element in the innerHTML string, use .map() to loop over each item in the array of colors that's defined as the parameter to the ColorList function. Inside of the .map(), each color should be turned into a <li> element.
     contentTarget.innerHTML = `
         <ul>
-            ${arrayOfColors.map(color => `<li>${color}</li>`).join("")}
+            ${arrayOfColors.map(color => `<li class="${color}">${color}</li>`).join("")}
         </ul>
     `
 }
